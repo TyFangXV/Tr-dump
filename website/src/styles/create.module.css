@@ -1,11 +1,26 @@
-.modal{
-    position: absolute;
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.editor{
+    min-width: 55vw;
+    min-height: 50vh;
+    resize:  none;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+@media screen and (max-width: 500px){
+    .editor{
+        width: 95vw;
+        height: 100vh;
+    }
 }

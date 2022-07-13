@@ -1,0 +1,87 @@
+.container{
+    min-width: 275px;
+    min-height: 350px;
+    border-radius: 10px;
+    max-width: 275px;
+    max-height: 350px;
+    color: #0F9A00;
+    border: 2px solid #0F9A00;
+    background-color: #E5E5B5;
+    box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    cursor: pointer;
+    z-index: -1;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.big_container_container{
+    /*center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_card{
+    min-width: 95vw;
+    min-height: 75vh;
+    max-width: 95vw;
+    border-radius: 10px;
+    color: #0F9A00;
+    border: 2px solid #0F9A00;
+    background-color: #E5E5B5;
+    box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    -webkit-box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    -moz-box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
+    cursor: pointer;
+    z-index: -1;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.big_card p {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    word-spacing: 3px;
+}
+
+.overlay{
+    min-width: 276px;
+    min-height: 350px;
+    border-radius: 10px;
+    max-width: 275px;
+    max-height: 350px;
+    background-color: #00000050;
+
+    position: absolute;
+    display: none;
+}
+
+.icons_layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.container:hover{
+    background-color: #dede92;
+}
+
+.container:hover .overlay{
+    display: flex;
+}
+
+.container p{
+    font-size: medium;
+    padding: 5px;
+    font-weight: bold;
+}

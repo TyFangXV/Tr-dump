@@ -9,15 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.12",
-    "@mantine/hooks": "^4.2.12",
-    "@mantine/rte": "^4.2.12",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "dompurify": "^2.3.8",
+    "dotenv": "^16.0.1",
     "next": "12.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^2.3.3",
     "@types/node": "18.0.1",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.6",

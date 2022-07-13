@@ -1,6 +1,6 @@
 .container{
-    width: 850px;
-    min-height: 500px;
+    width: 60vw;
+    height: 75vh;
     border-radius: 10px;
     box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
     -webkit-box-shadow: -6px 12px 19px 1px rgba(0,0,0,0.17);
@@ -31,4 +31,11 @@
 
 .btn:hover{
     background-color: #1bd006;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 95vw;
+        height: 100vh;
+    }
 }

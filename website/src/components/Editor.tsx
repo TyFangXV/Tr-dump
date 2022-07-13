@@ -1,25 +1,21 @@
-import { useState } from 'react';
-import { RichTextEditor } from '@mantine/rte';
-
+import React from 'react';
+import styles from '../styles/create.module.css';
 type Props = {
-    onTextChange: (value: string) => void;
-    value: string;
-}
+  value: string;
+  onTextChange: (text: string) => void;
+};
 
-const MyEditor: React.FC<Props> = ({value, onTextChange}) => {
+const MyEditor: React.FC<Props> = ({ value, onTextChange }) => {
   return (
-    <div style={{overflowY : 'hidden'}}>
-      <RichTextEditor
-        sticky={false}
-        controls={[
-          ['bold', 'italic', 'underline'],
-          ['unorderedList', 'h1', 'h2', 'h3'],
-          ['sup', 'sub'],
-          ['alignLeft', 'alignCenter', 'alignRight'],
-        ]}
+    <div>
+      <textarea
+        autoComplete="true"
+        maxLength={1000}
+        spellCheck={true}
+        onChange={(e) => onTextChange(e.target.value)}
         value={value}
-        onChange={onTextChange}
-      />
+        className={styles.editor}
+      ></textarea>
     </div>
   );
 };
